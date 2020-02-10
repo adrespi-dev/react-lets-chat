@@ -3,5 +3,5 @@
 ### Image Preview
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LoganWright/SimpleChat/SwiftRedesign/PromoAssets/SimpleChatScreenShot.png"><img />
+  <img src="https://raw.githubusercontent.com/adrespi-dev/react-lets-chat/master/preview.png"><img />
 </p>
