@@ -1,0 +1,17 @@
+.rx-chat-topbar--option {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in;
+    will-change: background-color;
+    padding: 8px;
+    color: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}

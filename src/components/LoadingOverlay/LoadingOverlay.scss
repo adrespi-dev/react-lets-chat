@@ -1,0 +1,48 @@
+.rx-chat-loading-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 999;
+
+    .rx-chat-loading-ring {
+        display: inline-block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+      }
+      .rx-chat-loading-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        margin: 8px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        animation: chat-loading-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    }
+    .rx-chat-loading-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+    .rx-chat-loading-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+    .rx-chat-loading-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+}
+
+@keyframes chat-loading-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

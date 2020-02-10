@@ -1,0 +1,54 @@
+{
+  "name": "react-lets-chat",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "files": [
+    "build"
+  ],
+  "description": "A skeleton for your React Component library using Rollup, TypeScript, Sass and Storybook",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "React",
+    "Component",
+    "Library",
+    "Rollup",
+    "Typescript",
+    "Sass",
+    "Storybook"
+  ],
+  "author": "Adrián Espinoza",
+  "license": "ISC",
+  "homepage": "https://github.com/adrespi-dev/react-lets-chat#readme",
+  "dependencies": {
+    "date-fns": "^2.8.1",
+    "emoji-js": "^3.4.1",
+    "react": "^16.12.0",
+    "react-awesome-popover": "^6.1.1",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@types/react": "^16.9.12",
+    "babel-loader": "^8.0.6",
+    "rollup": "^1.27.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "sass-loader": "^8.0.0",
+    "svg-react-loader": "^0.4.6",
+    "typescript": "^3.7.2"
+  }
+}

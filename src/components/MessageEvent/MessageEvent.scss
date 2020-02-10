@@ -1,0 +1,27 @@
+.rx-chat-message-event {
+    background: white;
+    box-shadow: 0 3px 14px rgba(0,0,0,.04), 0 4px 14px rgba(0,0,0,.04);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    &.is-info {
+        color: #1972f5;
+    }
+
+    &.is-success {
+        color: #52b723;
+    }
+
+    &.is-danger {
+        background-color: rgb(251, 233, 231);
+        color: rgb(198, 40, 40);
+    }
+
+    .rx-chat-message-event--icon {
+        height: 18px;
+        margin-right: 8px;
+    }
+}

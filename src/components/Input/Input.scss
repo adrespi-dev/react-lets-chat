@@ -1,0 +1,203 @@
+.rx-chat-input {
+    position: relative;
+
+    .rx-chat-input-wrapper--inner {
+        width: 100%;
+        min-height: 56px;
+        border-top: 1px solid rgb(230, 230, 230);
+        padding: 18px 18px;
+        padding-right: 128px;
+        background: white;
+        max-height: 200px;
+        overflow: auto;
+        position: relative;
+        
+        .rx-chat-input--text {
+            width: 100%;
+            white-space: pre-wrap;
+            -webkit-font-smoothing: antialiased;
+            resize: none;
+            position: relative;
+            bottom: 0;
+            max-height: 100%;
+            cursor: text;
+    
+            &:focus {
+                outline: none;
+            }
+            
+            &:empty:before {
+                content: attr(placeholder);
+                display: block;
+                color: rgba(86,88,103,.3);
+                outline: none;
+            }
+        }
+    }
+    
+    .rx-chat-input--buttons {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 21px;
+        display: flex;
+        align-items: center;
+        max-height: 57px;
+    }
+
+    .rx-chat-input--button-option {
+        background: transparent;
+        border: 0px;
+        padding: 0px;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #b9b9ba;
+
+        &:hover {
+            color: #9e9ea0;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .rx-send-icon {
+        color: #1972f5;
+
+        &:hover {
+            color: #1972f5;
+        }
+
+        &:disabled {
+            color: #d8d8d8 !important;
+        }
+    }
+}
+
+
+.rx-chat-emoji-popup {
+    width: 330px;
+    height: 300px;
+    padding: 0px;
+    background: white;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.05)) drop-shadow(0 1px 3px rgba(0,0,0,0.1));
+    animation-name: popup;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+
+    .rx-chat-emoji-popup--search-wrapper {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 0px 6px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 8px;
+
+        input {
+            height: 30px;
+            border-radius: 22px;
+            border: 1px solid;
+            border-color: #e2e2e2;
+            font-size: 14px;
+            width: 100%;
+            padding-left: 10px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: none;
+            outline: none;
+            padding: 0 24px;
+            padding-left: 36px;
+
+            &:focus {
+                outline: none;
+                border-color: #e4e4e4;
+            }
+        }
+
+        button {
+            background: transparent;
+            border: 0px;
+            outline: none;
+            cursor: pointer;
+            color: #c5c5c5;
+            text-align: center;
+            width: 24px;
+            height: 24px;
+            padding: 0px;
+            
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .search-icon {
+            left: 16px;
+            position: absolute;
+        }
+    }
+
+    .rx-chat-emoji-popup--emoji-picker-wrapper {
+        padding: 0 18px;
+        height: calc(100% - 52px - 46px);
+        overflow: auto;
+    }
+
+    .rx-chat-emoji-popup--display-emoji-wrapper {
+        display: flex;
+        align-items: center;
+        height: 46px;
+        padding: 0 20px;
+
+        .display-emoji-wrapper--emoji {
+            margin-right: 8px;
+            height: 34px;
+            width: 34px;
+            font-size: 24px;
+        }
+
+        .display-emoji-wrapper--emoji-name {
+            color: #585858;
+            text-transform: capitalize;
+        }
+    }
+
+    .rx-chat-emoji-popup--bottom-arrow {
+        position: absolute;
+        border-style: solid;
+        margin-bottom: 8px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        bottom: -15px;
+        top: auto;
+        right: auto;
+        left: auto;
+        border-bottom-width: 0px;
+        border-top-width: 8px;
+        border-right-width: 8px;
+        border-left-width: 8px;
+        border-top-color: rgba(255,255,255,0.95);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        left: calc(50% - 8px);
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: translateY(8px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

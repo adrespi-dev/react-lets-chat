@@ -1,0 +1,50 @@
+.rx-chat-topbar {
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    .rx-chat-toolbar-before {
+        display: flex;
+        align-items: center;
+        
+        .rx-chat-topbar--option {
+            margin-right: 8px;
+        }
+    }
+
+    .rx-chat-toolbar-after {
+        display: flex;
+        align-items: center;
+        
+        .rx-chat-topbar--option {
+            margin-left: 8px;
+        }
+    }
+
+    .rx-chat-topbar--avatar-wrapper {
+        position: relative;
+        margin-right: 12px;
+    }
+
+    .rx-chat-topbar--title-wrapper {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .rx-chat-topbar--title, .rx-chat-topbar--subtitle {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .rx-chat-topbar--title {
+        font-size: 1.05em;
+        font-weight: 500;
+    }
+
+    .rx-chat-topbar--subtitle {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.85em;
+    }
+}

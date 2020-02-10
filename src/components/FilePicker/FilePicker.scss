@@ -1,0 +1,29 @@
+.rx-chat--file-picker {
+    
+    .rx-chat--file-picker-button {
+        background: transparent;
+        border: 0px;
+        padding: 0px;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #b9b9ba;
+    
+        &:hover {
+            color: #9e9ea0;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input {
+        display: none;
+    }
+}
